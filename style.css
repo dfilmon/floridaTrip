@@ -1,0 +1,62 @@
+h1,
+h2 {
+  font-family: Lato;
+}
+
+#app {
+  border: solid;
+  border-color: red;
+  width: 99vw;
+}
+
+.componentContainer {
+  height: 500px;
+  margin: 1em;
+  border: solid;
+  border-color: blue;
+}
+
+#hero {
+  display: flex;
+}
+
+#heroLeft {
+  border: solid;
+  margin: 1em;
+  padding: 3em;
+  width: 55%;
+}
+
+#heroRight {
+  border: solid;
+  margin: 1em;
+  padding: 3em;
+  width: 35%;
+}
+
+#requirements {
+  display: flex;
+}
+
+#reqLeft {
+  border: solid;
+  margin: 1em;
+  padding: 3em;
+  width: 55%;
+}
+
+#reqRight {
+  border: solid;
+  margin: 1em;
+  padding: 3em;
+  width: 35%;
+}
+
+#register {
+  padding: 5em;
+  height: fit-content;
+}
+
+#footer {
+  height: 100px;
+}
