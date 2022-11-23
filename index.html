@@ -33,6 +33,10 @@
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
     crossorigin="anonymous"
   ></script>
+
+
+  <script src="//cdn.jsdelivr.net/npm/faunadb@latest/dist/faunadb-min.js"></script>
+
 </head>
 
 <div id="app">
@@ -50,8 +54,25 @@
 
   <div id="requirements" class="componentContainer">
 
-    <div id="reqLeft">text goes here</div>
-    <div id="reqRight">image goes here</div>
+    <div id="reqLeft">Image goes here</div>
+    <div id="reqRight">
+      <h1>Requirements</h1>
+      <ul>
+        <li>8th Grade+</li>
+        <li>GPA 3.0+</li>
+        <li>Hair must be short</li>
+        <li>Sunday School Teacher Approval</li>
+      </ul>
+
+      <h1>Price</h1>
+      <ul>
+        <li>Save $400 Total</li>
+        <li>$200 for Air Ticket</li>
+        <li>$50 for Airbnb</li>
+        <li>$150 for pocket money</li>
+      </ul>
+
+    </div>
 
   </div>
   
@@ -142,3 +163,22 @@
   <div id="footer" class="componentContainer"></div>
 </div>
   <!-- FOOTER ENDS -->
+
+
+  <!-- DATABASE STUFF -->
+
+  <script src="https://cdn.jsdelivr.net/npm/faunadb@latest/dist/faunadb.js"></script>
+<script type="text/javascript">
+  var faunadb = window.faunadb
+  var q = faunadb.query
+  var client = new faunadb.Client({
+    secret: 'fnAE2C_DmqAATXDi_PgvZX-xkCFd2sOlEf2RxDgM',
+    // Adjust the endpoint if you are using Region Groups
+    endpoint: 'https://db.fauna.com/',
+  })
+  client.query(
+    q.ToDate('2018-06-06')
+  )
+  .then(function (res) { console.log('Result:', res) })
+  .catch(function (err) { console.log('Error:', err) })
+</script>
